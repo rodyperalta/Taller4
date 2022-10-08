@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Taller3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var opc=parseInt(prompt("Escoja una opcion:"+
+        "\n1.Calcular el area de un triangulo."+
+        "\n2.Calcular la raiz cuadrada de un numero impar"+
+        "\n3.Ingresar una cadena de texto y mostrar la longitud de la cadena"+
+        "\n4.Mostrar la version del navegador"+
+        "\n5.Mostrar el ancho y la altura de la pantalla"+
+        "\n6.Imprimir página"+"\n"));
+        
+        if(opc==1){
+          var b=parseInt(prompt("Ingrese la base: "));
+          var a=parseInt(prompt("Ingrese la altura: "));
+          var area= (b * a)/2;
+          alert("El area es de: "+area);
+        }if(opc==2){
+          var numr=parseInt(prompt("Ingrese el numero: "));
+          var raiz=Math.sqrt(numr);
+          alert("El resultado es: "+raiz);
+        }if(opc==3){
+          var texto = prompt(new String(""));
+          document.write("Numero de letras de la cadena de texto: " + texto.length +
+          "<br>")
+
+        }if(opc==4){
+          document.write("Version: " + navigator.appVersion + "<br>");
+
+        }if(opc==5){
+          var ancho = window.innerWidth;
+          var alto = window.innerHeight;
+          alert("ancho: "+ancho+ " Alto: "+alto);
+
+        }if(opc==6){
+          window.print();
+
+        }
+        
+    </script>
+</body>
+</html>
